@@ -48,8 +48,8 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("DevilsHeavenMF")
-                await self.one.join_chat("FallenAssociation")
+                await self.one.join_chat("RQ_SF")
+                await self.one.join_chat("RQ_V0")
             except:
                 pass
             assistants.append(1)
@@ -62,7 +62,7 @@ class Userbot(Client):
 
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.one.id}`\n❄ ɴᴀᴍᴇ : {self.one.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.one.username}"
+                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} Assistant Started :**\n\n Id : `{self.one.id}`\n Name : {self.one.name}\n User : @{self.one.username}"
                 )
             except:
                 LOGGER(__name__).error(
